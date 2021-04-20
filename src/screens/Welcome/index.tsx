@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { SafeAreaView, Text, Image } from 'react-native';
 
 import wateringImg from '@assets/watering.png';
-
 import { Button } from '@components/Button';
+
 import styles from './styles';
 
 export function Welcome(): JSX.Element {

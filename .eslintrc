@@ -1,7 +1,12 @@
 {
 	"root": true,
 	"parser": "@typescript-eslint/parser",
-	"plugins": ["react", "@typescript-eslint", "prettier"],
+	"plugins": [
+		"react",
+		"@typescript-eslint",
+		"prettier",
+		"eslint-plugin-import-helpers"
+	],
 	"extends": [
 		"eslint:recommended",
 		"plugin:react/recommended",
@@ -11,7 +16,19 @@
 	],
 	"rules": {
 		"no-console": 1,
-		"prettier/prettier": 2
+		"prettier/prettier": 2,
+		"import-helpers/order-imports": [
+			"warn",
+			{
+				"newlinesBetween": "always",
+				"groups": [
+					"module",
+					["/^@assets/", "/^@components/", "/^@styles/"],
+					["parent", "sibling", "index"]
+				],
+				"alphabetize": { "order": "asc", "ignoreCase": true }
+			}
+		]
 	},
 	"settings": {
 		"react": {
