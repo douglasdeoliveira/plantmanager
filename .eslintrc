@@ -3,6 +3,7 @@
 	"parser": "@typescript-eslint/parser",
 	"plugins": [
 		"react",
+		"react-hooks",
 		"@typescript-eslint",
 		"prettier",
 		"eslint-plugin-import-helpers"
@@ -17,13 +18,22 @@
 	"rules": {
 		"no-console": 1,
 		"prettier/prettier": 2,
+		"react/prop-types": "off",
+		"react-hooks/rules-of-hooks": "error",
+		"react-hooks/exhaustive-deps": "warn",
 		"import-helpers/order-imports": [
 			"warn",
 			{
 				"newlinesBetween": "always",
 				"groups": [
 					"module",
-					["/^@assets/", "/^@components/", "/^@styles/"],
+					[
+						"/^@assets/",
+						"/^@components/",
+						"/^@screens/",
+						"/^@services/",
+						"/^@styles/"
+					],
 					["parent", "sibling", "index"]
 				],
 				"alphabetize": { "order": "asc", "ignoreCase": true }

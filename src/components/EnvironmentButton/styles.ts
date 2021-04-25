@@ -5,15 +5,23 @@ import fonts from '@styles/fonts';
 
 export default StyleSheet.create({
 	container: {
-		backgroundColor: colors.green,
-		height: 56,
-		borderRadius: 16,
+		backgroundColor: colors.shape,
+		width: 76,
+		height: 40,
 		justifyContent: 'center',
 		alignItems: 'center',
+		borderRadius: 12,
+		marginHorizontal: 5,
+	},
+	containerActive: {
+		backgroundColor: colors.green_light,
 	},
 	text: {
-		fontSize: 16,
-		color: colors.white,
+		color: colors.heading,
+		fontFamily: fonts.text,
+	},
+	textActive: {
+		color: colors.green_dark,
 		fontFamily: fonts.heading,
 	},
 });
