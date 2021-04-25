@@ -39,7 +39,7 @@ This project was developed using the following technologies:
 Clone the project and access the folder
 
 ```bash
-$ git clone https://github.com/douglasdeoliveira/platmanager.git && cd platmanager
+$ git clone https://github.com/douglasdeoliveira/plantmanager.git && cd plantmanager
 ```
 
 Follow the steps below
